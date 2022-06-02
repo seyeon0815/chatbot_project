@@ -287,12 +287,12 @@ def more():
                                     "messageText" : "추가 조회"
                                     },
                                     {
-                                    "label": "업비트 바로 가기",
+                                    "label": "업비트 가기",
                                     "action": "webLink",
-                                    "messageText": "업비트 바로 가기",
+                                    "messageText": "업비트 가기",
                                     "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                                     }
-                                ],"buttonLayout" : "vertical"
+                                ]
                             }
                         ]
                     }
@@ -624,10 +624,10 @@ def sang():
                                 "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{coin_market}"
                             },
                             {
-                                "label": "처음으로 돌아가기",
+                                "label": "뒤로 돌아가기",
                                 "action": "block",
                                 "blockId":"628adcfcee5923754330d4df",
-                                "messageText" : "처음으로 돌아가기"
+                                "messageText" : "뒤로 돌아가기"
                             }
                         ],
                         "buttonLayout" : "vertical"
@@ -1466,10 +1466,10 @@ def basic():
               ],
                 "buttons": [
                     {
-                            "label": "코인 동향 확인",
+                            "label": "돌아가기",
                             "action": "block",
                             "blockId": "627a430904a7d7314aeb7179",
-                            "messageText" : "코인 동향 확인"
+                            "messageText" : "돌아가기"
                         },
             {
               "label": "더 보기",
@@ -1477,7 +1477,7 @@ def basic():
               "webLinkUrl": "https://search.naver.com/search.naver?where=news&sm=tab_jum&query=비트코인%7C이더리움%7C가상화폐%7C가상자산"
             }
                 
-              ],"buttonLayout" : "vertical"
+              ]
                   }
               ]  
           }
@@ -1582,10 +1582,10 @@ def youtube():
                     ],
                       "buttons": [
                           {
-                            "label": "코인 동향 확인",
+                            "label": "돌아가기",
                             "action": "block",
                             "blockId": "627a430904a7d7314aeb7179",
-                            "messageText" : "코인 동향 확인"
+                            "messageText" : "돌아가기"
                         },
                   {
                     "label": "더 보기",
@@ -1593,7 +1593,7 @@ def youtube():
                     "webLinkUrl": "https://www.youtube.com/results?search_query=비트코인"
                   }
                       
-                    ],"buttonLayout" : "vertical"
+                    ]
                         }
                     ]  
                 }
