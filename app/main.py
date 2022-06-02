@@ -1008,7 +1008,7 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동률",
+                            "title": "변동량(%)",
                             "description": f"{b}%"
                         }
                     ],
@@ -1066,7 +1066,7 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동률",
+                            "title": "변동량(%)",
                             "description": f"{b}%"
                         }
                     ],
@@ -1126,7 +1126,7 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동률",
+                            "title": "변동량(%)",
                             "description": f"{b}"
                         }
                     ],
