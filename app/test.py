@@ -1008,10 +1008,6 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동량",
-                            "description": f"{a}"
-                        },
-                        {
                             "title": "변동량(%)",
                             "description": f"{b}%"
                         }
@@ -1068,10 +1064,6 @@ def seejum():
                         {
                             "title": "비교 시간",
                             "description": f'{full_time_T}'
-                        },
-                        {
-                            "title": "변동량",
-                            "description": f"{a}"
                         },
                         {
                             "title": "변동량(%)",
@@ -1132,10 +1124,6 @@ def seejum():
                         {
                             "title": "비교 시간",
                             "description": f'{full_time_T}'
-                        },
-                        {
-                            "title": "변동량",
-                            "description": f"{a}"
                         },
                         {
                             "title": "변동량(%)",
