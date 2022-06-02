@@ -565,19 +565,19 @@ def sang():
                         "itemList": [
                             {
                                 "title": "시가",
-                                "description": f"{res['opening_price'] * toKRW:,}"
+                                "description": f"{res['opening_price'] * toKRW:,.4f}"
                             },
                             {
                                 "title": "고가",
-                                "description": f"{res['high_price'] * toKRW:,}"
+                                "description": f"{res['high_price'] * toKRW:,.4f}"
                             },
                             {
                                 "title": "저가",
-                                "description": f"{res['low_price']*toKRW:,}"
+                                "description": f"{res['low_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "전일 종가",
-                                "description": f"{res['prev_closing_price']*toKRW:,}"
+                                "description": f"{res['prev_closing_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "변동률",
@@ -585,11 +585,11 @@ def sang():
                             },
                             {
                                 "title": "최근 거래량",
-                                "description": f"{res['trade_volume']:,}"
+                                "description": f"{res['trade_volume']:,.2f}"
                             },
                             {
                                 "title": "신고가",
-                                "description": f"{res['highest_52_week_price']*toKRW:,}"
+                                "description": f"{res['highest_52_week_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "신고가 달성",
@@ -597,7 +597,7 @@ def sang():
                             },
                             {
                                 "title": "신저가",
-                                "description": f"{res['lowest_52_week_price']*toKRW:,}"
+                                "description": f"{res['lowest_52_week_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "신저가 달성",
@@ -607,7 +607,7 @@ def sang():
                         "itemListAlignment" : "right",
                         "itemListSummary": {
                             "title": "종가",
-                            "description": f"{res['trade_price']*toKRW:,}"
+                            "description": f"{res['trade_price']*toKRW:,.4f}"
                         },
                         "buttons": [
                             {
