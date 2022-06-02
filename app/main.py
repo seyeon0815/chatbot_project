@@ -559,8 +559,8 @@ def sang():
                             "title": f"{coin_market}",
                             "description": f"{time_now}"
                         },
-                        "title": "BTC, USDT는 KRW로 환산된 값."
-                        #"description": "52주 신고가/신저가 - ",
+                        "title": "BTC, USDT는 KRW로 환산된 값.",
+                        #"description": "",
                         "thumbnail": {
                             "imageUrl": "https://user-images.githubusercontent.com/101306637/170913204-78700f45-1092-460d-a8c6-ef1d493b3bff.png",
                             "width": 800,
