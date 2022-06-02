@@ -287,9 +287,9 @@ def more():
                                     "messageText" : "추가 조회"
                                     },
                                     {
-                                    "label": "업비트",
+                                    "label": "업비트 가기",
                                     "action": "webLink",
-                                    "messageText": "업비트 보러가기",
+                                    "messageText": "업비트 가기",
                                     "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                                     }
                                 ]
@@ -492,14 +492,6 @@ def acc():
                                 "key3": f"{top_change_id[4]}"
                             }
                             }
-                        ],
-                        "buttons": [
-                            {
-                            "label": "처음으로 돌아가기",
-                            "action": "block",
-                            "blockId":"627a3d5745b5fc3106459c56",
-                            "messageText" : "처음으로 돌아가기"
-                            }
                         ]
                         }
                     ]
@@ -573,19 +565,19 @@ def sang():
                         "itemList": [
                             {
                                 "title": "시가",
-                                "description": f"{res['opening_price'] * toKRW:,}"
+                                "description": f"{res['opening_price'] * toKRW:,.4f}"
                             },
                             {
                                 "title": "고가",
-                                "description": f"{res['high_price'] * toKRW:,}"
+                                "description": f"{res['high_price'] * toKRW:,.4f}"
                             },
                             {
                                 "title": "저가",
-                                "description": f"{res['low_price']*toKRW:,}"
+                                "description": f"{res['low_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "전일 종가",
-                                "description": f"{res['prev_closing_price']*toKRW:,}"
+                                "description": f"{res['prev_closing_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "변동률",
@@ -593,11 +585,11 @@ def sang():
                             },
                             {
                                 "title": "최근 거래량",
-                                "description": f"{res['trade_volume']:,}"
+                                "description": f"{res['trade_volume']:,.2f}"
                             },
                             {
                                 "title": "신고가",
-                                "description": f"{res['highest_52_week_price']*toKRW:,}"
+                                "description": f"{res['highest_52_week_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "신고가 달성",
@@ -605,7 +597,7 @@ def sang():
                             },
                             {
                                 "title": "신저가",
-                                "description": f"{res['lowest_52_week_price']*toKRW:,}"
+                                "description": f"{res['lowest_52_week_price']*toKRW:,.4f}"
                             },
                             {
                                 "title": "신저가 달성",
@@ -615,7 +607,7 @@ def sang():
                         "itemListAlignment" : "right",
                         "itemListSummary": {
                             "title": "종가",
-                            "description": f"{res['trade_price']*toKRW:,}"
+                            "description": f"{res['trade_price']*toKRW:,.4f}"
                         },
                         "buttons": [
                             {
@@ -630,6 +622,12 @@ def sang():
                                 "label": "업비트로 바로 가기",
                                 "action": "webLink",
                                 "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{coin_market}"
+                            },
+                            {
+                                "label": "뒤로 돌아가기",
+                                "action": "block",
+                                "blockId":"628adcfcee5923754330d4df",
+                                "messageText" : "뒤로 돌아가기"
                             }
                         ],
                         "buttonLayout" : "vertical"
@@ -798,14 +796,14 @@ def hopeprice():
                                     "messageText" : "추가 조회"
                                     },
                                     {
-                                    "label": "업비트",
+                                    "label": "업비트 보러 가기",
                                     "action": "webLink",
-                                    "messageText": "업비트 보러가기",
+                                    "messageText": "업비트 보러 가기",
                                     "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                                     },
                                     
                                 ],
-                                
+                                "buttonLayout" : "vertical"
                             }
                             }
                         ]
@@ -1010,18 +1008,20 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동량",
-                            "description": f"{a}"
-                        },
-                        {
-                            "title": "변동량(%)",
+                            "title": "변동률",
                             "description": f"{b}%"
                         }
                     ],
                     "itemListAlignment" : "right",
                     "buttons": [
                         {
-                            "label": "업비트 차트 보기",
+                            "label": "추가 조회",
+                            "action": "block",
+                            "blockId": "6281c5009ac8ed784416bccd",
+                            "messageText" : "추가 조회"
+                        },
+                        {
+                            "label": "업비트 보러 가기",
                             "action": "webLink",
                             "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                         }
@@ -1066,18 +1066,20 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동량",
-                            "description": f"{a}"
-                        },
-                        {
-                            "title": "변동량(%)",
+                            "title": "변동률",
                             "description": f"{b}%"
                         }
                     ],
                     "itemListAlignment" : "right",
                     "buttons": [
                         {
-                            "label": "업비트 차트 보기",
+                            "label": "추가 조회",
+                            "action": "block",
+                            "blockId": "6281c5009ac8ed784416bccd",
+                            "messageText" : "추가 조회"
+                        },
+                        {
+                            "label": "업비트 보러 가기",
                             "action": "webLink",
                             "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                         }
@@ -1124,18 +1126,20 @@ def seejum():
                             "description": f'{full_time_T}'
                         },
                         {
-                            "title": "변동량",
-                            "description": f"{a}"
-                        },
-                        {
-                            "title": "변동량(%)",
+                            "title": "변동률",
                             "description": f"{b}"
                         }
                     ],
                     "itemListAlignment" : "right",
                     "buttons": [
                         {
-                            "label": "업비트 바로가기",
+                            "label": "추가 조회",
+                            "action": "block",
+                            "blockId": "6281c5009ac8ed784416bccd",
+                            "messageText" : "추가 조회"
+                        },
+                        {
+                            "label": "업비트 보러 가기",
                             "action": "webLink",
                             "webLinkUrl": f"https://upbit.com/exchange?code=CRIX.UPBIT.{ticker}"
                         }
@@ -1409,7 +1413,7 @@ def basic():
                     "items": [
                         {
                         "header": {
-                        "title": "가상화폐 연관 뉴스 보러가기"
+                        "title": "가상화폐 연관 뉴스 보기"
                         },
               "items": [
                 {
@@ -1449,6 +1453,12 @@ def basic():
               }
               ],
                 "buttons": [
+                    {
+                            "label": "돌아가기",
+                            "action": "block",
+                            "blockId": "627a430904a7d7314aeb7179",
+                            "messageText" : "돌아가기"
+                        },
             {
               "label": "더 보기",
               "action": "webLink",
@@ -1559,6 +1569,12 @@ def youtube():
                     }
                     ],
                       "buttons": [
+                          {
+                            "label": "돌아가기",
+                            "action": "block",
+                            "blockId": "627a430904a7d7314aeb7179",
+                            "messageText" : "돌아가기"
+                        },
                   {
                     "label": "더 보기",
                     "action": "webLink",
@@ -1574,7 +1590,6 @@ def youtube():
               }
               }
     return responseBody1
-
 
 
 
