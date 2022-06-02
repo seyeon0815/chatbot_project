@@ -62,9 +62,4 @@
 - top()에서 추출한 데이터를 데이터베이스에 저장합니다.
 
 # wsgi.py
-## 서버 실행
-- 해당 파일 내용에 포함된 파일을 서버에서 실행 하도록 해주는 파일입니다.
-
-# requirements.txt
-
-# procfile
+- Flask와 같은 Micro Framework를 서버로 연결해 외부에서 접속할 수 있도록 도와줍니다.
