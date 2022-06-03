@@ -30,7 +30,7 @@ top_market_list = pd.read_csv("./app/data/market_list.csv")
 #result2 = psql.read_sql("SELECT * FROM top_change_val;", connection)
 
 
-connection = psycopg2.connect(host='ec2-3-234-131-8.compute-1.amazonaws.com', dbname='d1t3uudchb1icj', user='fsuglmawspjqhw', password='1c2a603d76903416be3162a9ee3571658f265d01a3f8daf4b3803f7a4a99ff9c')
+connection = psycopg2.connect(host='', dbname='', user='', password='')
 
 
 ## 데이터 가져오기
@@ -1497,7 +1497,7 @@ def youtube():
     #print(body1['userRequest']['utterance'])
 
 # https://console.cloud.google.com/apis/credentials 여기서 API발급받아 사용
-    DEVELOPER_KEY='AIzaSyBa_S65tRPb1mALqTtsDB1e9p6s-7kshJA' # 내 API 키값 입력
+    DEVELOPER_KEY='' # 내 API 키값 입력
     YOUTUBE_API_SERVICE_NAME='youtube'
     YOUTUBE_API_VERSION='v3'
 

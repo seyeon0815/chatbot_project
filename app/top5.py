@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 def top():
     # 탑 5 구하기 위해 market id 불러오기
     #market_list = pd.read_csv("./app/data/market_list.csv")
-    #market_list = pd.read_csv("data/market_list.csv")
+    market_list = pd.read_csv("data/market_list.csv")
     market_list = market_list['market']
     market_list = market_list.values.tolist()
     c = len(market_list)
@@ -131,7 +131,7 @@ def liveData():
     #live_coin = si()
 
         # PostgreSQL 데이터베이스 접속 엔진 생성.
-    local_postgresql_url = "postgresql://fsuglmawspjqhw:1c2a603d76903416be3162a9ee3571658f265d01a3f8daf4b3803f7a4a99ff9c@ec2-3-234-131-8.compute-1.amazonaws.com:5432/d1t3uudchb1icj"
+    local_postgresql_url = ""
     # "postgresql://user:password@localhost:5432/DB명"
 
     # localhost의 812 포트를 Parallels에 설치된 PostgreSQL 5432 포트로 포트포워딩.
